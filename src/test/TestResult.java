@@ -1,12 +1,15 @@
 package test;
 
-import domain.Exercise;
+    import domain.Exercise;
 
-public class TestResult {
+    /**
+     * Клас для тестування підрахунку кількості щасливих квитків.
+     */
+    public class TestResult {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+            // Виводимо кількість щасливих квитків
+            System.out.println("Кількість щасливих трамвайних квитків: " + Exercise.countLuckyTickets());
+        }
     }
-}
